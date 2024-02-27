@@ -104,4 +104,13 @@ Date — дата и время создания коммита;
 
 ---
 
+## Схема состояний
 
+```mermaid
+graph LR;
+
+untracked -- "git add" --> staged;
+
+  staged    -- "???"     --> tracked/comitted;
+
+```
